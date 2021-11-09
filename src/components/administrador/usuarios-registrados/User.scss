@@ -1,0 +1,129 @@
+@import '../../../variables.scss';
+
+.user-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+    h1 {
+        font-family: $fontTitle;
+        font-size: 40px;
+    }
+    .user-list-body {
+        font-family: $fontText;
+        width: 90%;
+        background: $bg-form;
+        padding: 25px;
+        margin: 50px 50px 0;
+        height: auto;
+        border-radius: 5px;
+        & .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input {
+                width: 50%;
+                margin-left: 10px;
+            }
+        }
+        & .list-container {
+            margin-top: 25px;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: auto;
+            & .user-container {
+                box-shadow: 1px 1px 3px black;
+                background-color: white;
+                width: 100%;
+                height: 60px;
+                padding: 20px;
+                margin-bottom: 20px;
+                transition: all 0.3s ease-in-out;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+
+                &:hover {
+                    // transform: scale(1.015);
+                }
+                .user-id-container,
+                .user-name-container,
+                .actual-role-container{
+                    width: calc(100% / 10);
+                    &.lower-space{
+                        width: calc(100% / 3);
+                    }
+                }
+                .user-role-container,
+                .user-status-container {
+                    width: calc(100% / 5);
+                }
+                & p {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 0;
+                }
+                .user-name-container {
+                    display: flex;
+                    align-items: center;
+                    & i {
+                        font-size: 25px;
+                        margin-right: 5px;
+                    }
+                }
+                .user-role-container {
+                    display: flex;
+                    align-items: center;
+                    label {
+                        margin-right: 10px;
+                    }
+                    & .ui.selection.dropdown.input-dropdown {
+                        min-width: 130px !important;
+                        max-width: 130px !important;
+                    }
+                }
+                .user-status-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    .toggle-btn {
+                        margin-left: 10px;
+                        .toggle-input {
+                            cursor: pointer;
+                            position: relative;
+                            width: 40px;
+                            height: 20px;
+                            appearance: none;
+                            background-color: tomato;
+                            outline: none;
+                            border-radius: 20px;
+                            &:checked {
+                                background-color: $colorGreen;
+                                &::before {
+                                    left: 22px;
+                                }
+                            }
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                width: 15px;
+                                height: 15px;
+                                border-radius: 50%;
+                                background-color: white;
+                                top: 2.5px;
+                                left: 3px;
+                                transition: all 0.5s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

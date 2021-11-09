@@ -1,0 +1,113 @@
+.container-reenviarToken{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form-reenvviarToken{
+    width: 600px;
+    height: 300px;
+    padding: 10px 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.containe-title-close-Token{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-reenviarToken{
+    font-size: 16px;
+    font-family: var(--fontText);
+    font-weight: bold;
+}
+
+.container-input-ReenviarToken{
+    height: 220px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.correoReenviar{
+    font-size: 16px;
+    font-family: var(--fontText);
+    font-weight: bold;
+}
+
+.correoReenviar{
+    padding-right: 250px;
+    margin-bottom: 5px;
+}
+
+.input-reenviarToken{
+    width: 60%;
+    height: 32px;
+    font-family: var(--fontText);
+    font-size: 14px;
+    background: #E8F0EC ;
+    border: none;
+    padding-left: 5px;
+    border-bottom: 2px solid black;
+    border-radius: 3px 3px 0 0;
+}
+
+.input-reenviarToken:focus{
+    outline: none;
+}
+
+.button-reenvio-token{
+    width: 60%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--fontTitle);
+    margin-bottom: 10px;
+    color: aliceblue;
+    padding: 5px;
+    border: none;
+    background: var(--colorGreen);
+    border-radius: 3px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.button-reenvio-token:focus{
+    outline: none;
+}
+
+.container-button-reenviar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-alert-reenviar{
+    display: block;
+    margin: 4px 0px;
+    font-family: var(--fontText);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    background: tomato;
+    color: white;
+    border: 1px solid tomato;
+    border-radius: 3px;
+    width: 60%;
+    padding: 4px;
+}

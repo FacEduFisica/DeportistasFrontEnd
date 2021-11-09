@@ -1,0 +1,19 @@
+@import'../../../variables.scss';
+
+.reports-container{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .report-cards_container{
+        width: 90%;
+        height: 50%;
+        margin: 0 auto;
+        border-radius: 5px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}

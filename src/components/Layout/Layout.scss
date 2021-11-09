@@ -1,0 +1,9 @@
+.app-layout-container{
+    display: flex;
+    .app-layout-principal_content{
+        width: 80%;
+        margin-left: 20%;
+        height: 100%;
+        min-height: 100vh;
+    }
+}

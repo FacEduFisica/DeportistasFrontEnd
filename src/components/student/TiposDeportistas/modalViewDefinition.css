@@ -1,0 +1,71 @@
+.container-modal-definition{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewDefinition{
+    padding: 20px;
+    width: 500px;
+    height: 150px;
+    background: white;
+    border-radius: 3px;
+}
+
+.title-viewDefinition{
+    font-size: 18px;
+    font-family: var(--fontText);
+    text-align: center;
+}
+
+.container-buttons-definition{
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-ok-definition{
+    margin: 5px;
+    width: 60px;
+    font-size: 15px;
+    font-family: var(--fontText);
+    padding: 8px;
+    border: none;
+    color: black;
+    background: var(--colorGreen);
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+
+.button-ok-definition:focus{
+    outline: none;
+}
+
+.button-no-definition{
+    margin: 5px;
+    width: 60px;
+    font-size: 15px;
+    font-family: var(--fontText);
+    padding: 8px;
+    border: none;
+    color: black;
+    background: var(--colorYellow);
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+
+.button-no-definition{
+    outline: none;
+}

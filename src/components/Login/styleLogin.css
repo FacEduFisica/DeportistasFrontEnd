@@ -1,0 +1,336 @@
+/* estilos del componente login  */
+.app-login{
+    display: flex;
+}
+
+/* estilos del componente Formlogin */
+.form-login{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-header-form{
+    width: 100%;
+    margin-top: 30px;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.container-buttons-login{
+    width: 50%;
+    height: 40px;
+    margin-right: 20px;
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.title-login{
+    font-family: var(--fontTitle);
+    font-size: 40px;
+    padding: 10px 20px 0;
+    margin-top: 70px;
+}
+
+.button-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 100%;
+    padding: 10px 20px;
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--fontTitle);
+    color: #fff;
+    padding: 5px;
+    border: none;
+    background: var(--colorGreen);
+    border-radius: 3px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-login:hover{
+    color: white;
+}
+
+.button-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 40px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--fontTitle);
+    color: #fff;
+    padding: 5px;
+    border: none;
+    background: var(--colorGreen);
+    border-radius: 3px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-register:hover{
+    color: white;
+}
+
+.active{    
+    color: black;
+    background: #fff;
+    box-shadow: -1px 1px 3px 4px rgba(25, 104, 68, 0.3);
+}
+
+.active:hover{
+    color: black;
+}
+
+.container-body-form{
+    width: 100%;
+    height: 95%;
+    justify-content: center;
+}
+
+.container-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 90px;
+    padding-top: 100px;
+}
+
+.container-form .input-box{
+    position: relative;
+    height: 88px;
+}
+
+.container-form .input-box input{
+    width: 80%;
+    padding: 5px 0 5px 4px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background: rgba(25, 104, 68, 0.1);
+    border-bottom: 1.5px solid black;
+    border-radius: 3px 3px 0 0;
+}
+
+.container-form .input-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2px 0 2px 4px;
+    font-size: 14px;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+    font-family: var(--fontText);
+}
+
+.container-form .input-box input:focus ~ label,
+.container-form .input-box input:valid ~ label{
+    top: -28px;
+    background: var(--colorYellow);
+    padding: 3px 6px;
+    color: #000;
+    border-radius: 2px;
+}
+    
+.button-submit{
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--fontTitle);
+    margin-bottom: 10px;
+    color: aliceblue;
+    padding: 5px;
+    border: none;
+    background: var(--colorGreen);
+    border-radius: 3px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.button-submit:focus{
+    outline: none;
+}
+
+.container-olvido-contraseña{
+    width: 365.11px;
+    margin-top: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.olvido-contraseña{
+    font-size: 15px;
+    height: 20px;
+    font-family: var(--fontText);
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
+
+.olvido-contraseña:hover{
+    border-bottom: 2px solid black;
+}
+
+
+/* estilo del componente BannerLogin */
+.banner-login{
+    width: 60%;
+    height: 100vh;
+    background: var(--colorGreen);
+}
+
+.container-images{
+    width: 100%;
+    position: relative;
+}
+
+.background-banner{
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+.container-images::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(25, 104, 68,0.3);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.container-icons{
+    width: 100%
+}
+
+.logo-poli{
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    z-index: 10;
+}
+
+.figura-banner{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+.figura-banner::after{
+    content: '';
+    position: absolute;
+    top: -60px;
+    width: 100%; 
+    height: 60px; 
+    background: rgba(25, 104, 68,1);
+    -moz-border-radius: 100px 100px 0 0;
+    -webkit-border-radius: 100px 100px 0 0;
+    border-radius: 100px 100px 0 0;
+}
+
+.mision-poli{
+    text-align: justify;
+    font-size: 13px;
+    font-style: italic;
+    font-family: var(--fontText);
+    padding: 0 35px;
+    color: #fff;
+}
+
+/* estilos para los mensajes de alertas del login */
+.message-alert{
+    display: block;
+    margin: 4px 0px;
+    font-family: var(--fontText);
+    font-size: 11px;
+    background: tomato;
+    color: white;
+    border: 1px solid tomato;
+    border-radius: 3px;
+    width: 80%;
+    padding: 4px;
+}
+
+.message-error{
+    display: block;
+    margin: 4px 0px;
+    font-family: var(--fontText);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    background: tomato;
+    color: white;
+    border: 1px solid tomato;
+    border-radius: 3px;
+    width: 80%;
+    padding: 4px;
+}
+
+.message-success{
+    display: block;
+    margin: 4px 0px;
+    font-family: var(--fontText);
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    background: var(--colorYellow);
+    color: black;
+    border: 1px solid var(--colorYellow);
+    border-radius: 3px;
+    width: 80%;
+    padding: 4px;
+}
+
+/* estilos para el reenvio del token */
+.conainer-reenviar-token{
+    margin-top: 110px;
+    width: 365.11px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-reenviar-token{
+    font-size: 15px;
+    font-family: var(--fontText);
+}
+
+.reenviar-aquiToken{
+    margin-left: 5px;
+    font-size: 15px;
+    font-family: var(--fontText);
+    font-weight: bold;
+    color: var(--colorGreen);
+    cursor: pointer;
+}
+
+.reenviar-aquiToken:hover{
+    border-bottom: 2px solid var(--colorGreen);
+}

@@ -1,0 +1,70 @@
+@import '../../../variables.scss';
+
+.user-register-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    width: 100%;
+    height: 100vh;
+    h1{
+        font-family: $fontTitle;
+        font-size: 40px;
+    }
+
+        .user-register-form_container{
+            font-family: $fontText;
+            width: 80%;
+            background: $bg-form;
+            padding: 25px;
+            margin: 50px 50px 0;
+            height: 60%;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            .user-register-form{
+                height: 100%;
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .form_item{
+                    display: flex;
+                    label{
+                        display: block;
+                        width: 150px;
+                    }
+                    &.pass-container{
+                        div{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            label{
+                                display: block;
+                                width: 150px;
+                            }
+                        }
+                    }
+                    & .error-pass{
+                        display: block;
+                        margin: 4px 0px;
+                        font-family: var(--fontText);
+                        font-size: 11px;
+                        background: tomato;
+                        color: white;
+                        border: 1px solid tomato;
+                        border-radius: 3px;
+                        // width: 80%;
+                        padding: 4px;
+                    }
+                }
+            }
+        
+    }
+    .user-register-form_actions{
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}

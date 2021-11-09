@@ -1,0 +1,102 @@
+.modal-terminos-condiciones{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.container-title-close-terminosCondiciones{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerPadre-terminos-condicones{
+    width: 700px;
+    height: 600px;
+    background: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.title-terminos-condiciones{
+    font-size: 35px;
+    font-family: var(--fontTitle);
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container-terminos-condiciones{
+    padding: 10px;
+    border: 2px solid black;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.subTitle-terminos-condiciones{
+    font-size: 16px;
+    font-family: var(--fontText);
+    font-weight: 700;
+
+}
+
+.text-terminos-condiciones{
+    font-size: 16px;
+    font-family: var(--fontText);
+    text-align: justify;
+    color: black;
+}
+
+.container-button-terminos{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-terminos-condiciones{
+    width: 60%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--fontTitle);
+    margin-bottom: 10px;
+    color: black;
+    padding: 5px;
+    border: none;
+    background: var(--colorYellow);
+    border-radius: 3px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.button-terminos-condiciones:focus{
+    outline: none;
+}
+
+.button-closed-terminosCondicones{
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+    background: var(--colorYellow);
+    padding: 2px 3px;
+    cursor: pointer;
+}
+    

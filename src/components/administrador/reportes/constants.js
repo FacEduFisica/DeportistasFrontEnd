@@ -1,0 +1,4 @@
+export const REPORT_GENERAL = `Al darle clic en el icono de descarga, se generara un reporte general donde se listarán todos los estudiantes registrados en la aplicación con sus respectivos datos.`;
+export const REPORT_ENTRENADOR = `Al darle clic en el icono de descarga, se generara una planilla donde se listarán todos los estudiantes registrados en la disciplina del entrenador con sus respectivos datos.`;
+export const REPORT_DEPORTOLOGO = `Al darle clic en el icono de descarga, se generara una planilla donde se listarán todas las consultas realizadas por el deportologo con sus respectivos datos.`;
+export const REPORT_FISIOTERAPEUTA = `Al darle clic en el icono de descarga, se generara una planilla donde se listarán todas las consultas realizadas por el fisioterapeuta con sus respectivos datos.`;

@@ -1,0 +1,67 @@
+@import '../../../variables.scss';
+
+.admin-generate-permission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    width: 100%;
+    height: 100vh;
+    h1{
+        font-family: $fontTitle;
+        font-size: 40px;
+    }
+    .admin-generate-permission_container{
+        font-family: $fontText;
+        background: $bg-form;
+        padding: 25px;
+        margin: 50px 50px 0;
+        height: 70%;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .top-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            
+            & .dropdown-container{
+                & label{
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+            }
+            & .status-container{
+                padding: 10px;
+                background: white;
+                border-radius: 5px;
+                & label{
+                    font-weight: 600;
+                }
+                & span{
+                    font-weight: bold;
+                    font-size: 16px;
+                    margin-left: 10px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .alert-container{
+        & label{
+            font-weight: bold;
+        }
+        & div{
+            border: 2px solid ;
+            margin-top: 5px;
+            padding: 15px;
+            color: black;
+            text-align: justify;
+        }
+    }
+    .action-container{
+        display: flex;
+        justify-content: center;
+    }
+    }

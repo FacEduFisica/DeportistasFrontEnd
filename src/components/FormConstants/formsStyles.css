@@ -1,0 +1,217 @@
+.container-form-sgdar{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container-form-sgdar.from-modal{
+    height: 100%;
+}
+
+.title-form{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-family: var(--fontTitle);
+    font-size: 40px;
+    margin: 15px 0 0 0 ;
+}
+
+.form-sgdar{
+    width: 90%;
+    height: 70%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.container-row-form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 20px 20px;
+}
+
+.container-input{
+    width: 30%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.container-label{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+
+.label-fomr{
+    font-size: 16px;
+    font-family: var(--fontText);
+    font-weight: 600;
+}
+
+.isRequired{
+    color: red;
+    font-family: var(--fontText);
+}
+
+.input-form{
+    padding-left: 10px;
+    width: 100%;
+    height: 37px;
+    font-style: italic;
+    font-weight: 300;
+    border: none;
+    border-radius: 3px;
+}
+
+.textarea-form{
+    width: 608px;
+    height: 60px; 
+    resize: none;
+    font-style: italic;
+    font-weight: 300;
+    border: none;
+    border-radius: 3px;
+}
+
+.textarea-form:focus{
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.input-form:focus{
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.input-form::placeholder{
+    font-size: 14px;
+    font-family: var(--fontText);
+    font-style: italic;
+}
+
+input[type=date]{
+    font-size: 14px;
+    font-family: var(--fontText);
+    font-style: italic;
+    color: gray;
+}
+
+.input-dropdown{
+    width: 100%;
+    height: 25px;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    font-family: var(--fontText);
+}
+
+.container-pages-form{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.button-page{
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    font-size: 18px;
+    border: none;
+    background: var(--colorYellow);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.button-page:focus{
+    outline: none;
+}
+
+.container-buttons-form{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.buttons-save-edit{
+    margin: 5px;
+    width: 120px;
+    font-size: 15px;
+    padding: 8px;
+    border: none;
+    color: white;
+    background: var(--colorGreen);
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+
+.buttons-save-edit:focus{
+    outline: none;
+}
+
+/* contenedor y botones de la consulta de la los datos personales e info de la app  */
+.container-info-consult{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.button-info-personal{
+    border: none;
+    margin-right: 30px;
+    width: 150px;
+    font-size: 13px;
+    padding: 8px;
+    color: white;
+    background: var(--colorGreen);
+    font-weight: 300;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+
+.button-info-personal:focus{
+    outline: none;
+}
+
+.button-info-app{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    font-size: 18px;
+    border: none;
+    font-size: 22px;
+    background: var(--colorYellow);
+    border-radius: 30px;
+    padding: 0 0 0 4px;
+    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.button-info-app:focus{
+    outline: none;
+}
+
+.icon-info{
+    font-size: 18px;
+}

@@ -1,0 +1,210 @@
+/* estilos del contenedor de las consultas */
+.container-consultas-realizadas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.container-conusultas {
+    font-family: var(--fontText);
+    width: 96%;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    margin: 50px 50px 0;
+    height: auto;
+    border-radius: 5px;
+}
+
+.container-search-consultas {
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.label-paciente-consulta {
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.input-consultas {
+    height: 30px;
+    width: 360px;
+    border: none;
+    background: #fff;
+    border-radius: 3px 0 0 3px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: var(--fontText);
+}
+
+.input-consultas:focus {
+    outline: none;
+}
+
+.input-consultas::placeholder{
+    font-size: 16px;
+}
+
+.label-fomr-consultas {
+    font-family: var(--fontText);
+    font-size: 18px;
+    padding-top: 5px;
+    margin-right: 10px;
+}
+
+.button-search-consultas {
+    height: 30px;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.button-search-consultas:focus {
+    outline: none;
+}
+
+.list-container-consultas {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+}
+
+.no-found-datos{
+    margin-top: 40px;
+    font-family: var(--fontText);
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+}
+
+/* estilos de cada una de las consultas, de cada item de la list */
+.item-consulta {
+    box-shadow: 1px 1px 3px black;
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.container-name-apellido{
+    width: 240px;
+}
+
+.container-numero-documento{
+    width: 200px;
+}
+
+.container-fecha-consulta{
+    width: 90px;
+}
+
+.container-responsable{
+    width: 250px;
+}
+
+.container-tel-responsable{
+    width: 90px;
+}
+
+.text-consulta-detail{
+    font-size: 14px;
+    font-family: var(--fontText);
+}
+
+/* estilos de la consulta en detalle - modal consulta */
+.modal-consultaDetalle{
+    position: fixed;
+    top: 0; 
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+.container-modal-consultaDetalle{
+    width: 900px;
+    padding: 20px;
+    height: 550px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-title-close-consultaDetalle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-consulta-detail{
+    font-size: 34px;
+    font-family: var(--fontTitle);
+    font-weight: bold;
+}
+
+.button-closed-consulta{
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+    background: var(--colorYellow);
+    padding: 2px 3px;
+    cursor: pointer;
+}
+
+.button-closed-consulta{
+    outline: none;
+}
+
+.container-info-consultaDetalle{
+    width: 100%;
+    margin-top: 30px;
+    height: 360px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.info-consulta-text{
+    font-size: 17px;
+    font-family: var(--fontText);
+}
+
+.container-button-okConsultaDetail{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,159 @@
+.modal-olvido-contraseña{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-olvido-contraseña{
+    padding: 15px;
+    width: 500px;
+    height: 280px;
+    background: white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-buton-close{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-form-olvido{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-input-olvido{
+    height: 80px;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.label-olvido-contraseña{
+    font-size: 25px;
+    margin: 15px 0 0 110px;
+    font-family: var(--fontText);
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.input-email-olvido{
+    height: 30px;
+    width: 60%;
+    border: none;
+    margin: 10px;
+    padding-left: 5px;
+    background: #E8F0EC;
+    border-bottom: 2px solid black;
+}
+
+.input-email-olvido:focus{
+    outline: none;
+}
+
+.input-email-olvido::placeholder{
+    font-size: 17px;
+    font-family: var(--fontText);
+}
+
+.obligatorio{
+    color: red;
+    font-weight: bold;
+}
+
+.message-alert-olvido{
+    display: block;
+    font-family: var(--fontText);
+    font-size: 11px;
+    background: tomato;
+    color: white;
+    border: 1px solid tomato;
+    border-radius: 3px;
+    width: 60%;
+    padding: 4px;
+}
+
+.message-success-olvido{
+    display: block;
+    margin: 4px 0px;
+    font-family: var(--fontText);
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    background: var(--colorYellow);
+    color: black;
+    border: 1px solid var(--colorYellow);
+    border-radius: 3px;
+    width: 80%;
+    padding: 4px;
+}
+
+.message-error-olvido{
+    display: block;
+    margin: 4px 0px;
+    font-family: var(--fontText);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    background: tomato;
+    color: white;
+    border: 1px solid tomato;
+    border-radius: 3px;
+    width: 80%;
+    padding: 4px;
+}
+
+.button-closed-olvido{
+    border: none;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+    background: var(--colorYellow);
+    padding: 2px 3px;
+    cursor: pointer;
+}
+
+.button-closed-olvido:focus{
+    outline: none;
+}
+
+.button-olvido-contraseña{
+    width: 60%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--fontTitle);
+    margin-bottom: 10px;
+    color: aliceblue;
+    padding: 5px;
+    border: none;
+    background: var(--colorGreen);
+    border-radius: 3px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.button-olvido-contraseña:focus{
+    outline: none;
+}

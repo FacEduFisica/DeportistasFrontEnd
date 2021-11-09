@@ -1,0 +1,69 @@
+@import '../../../../variables.scss';
+
+.user-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0, .5);
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .user-modal_container{
+        position: relative;
+        background-color: white;
+        width: 80%;
+        height: 7   0%;
+        padding: 15px;
+        .nav-menu-container{
+            & nav{
+                display: flex;
+                height: 40px;
+                align-items: flex-end;
+                // border-bottom: 2px solid black;
+               & li{
+                    list-style: none;
+                    width: calc(100% / 4);
+                    background: #c0c0c0;
+                    padding: 5px;
+                    transition: all .3s ease-in-out;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    margin-right: 2px;
+                    a{
+                        color: black;
+                        font-weight: bold;
+                    }
+                    &:hover{
+                        background: #a1a1a1;
+                    }
+                    &.active-menu{
+                        background: #E7C63E;
+                    }
+                }
+            }
+        }
+        .form-container{
+            border: 1px solid #c0c0c0;
+            max-height: 90%;
+            overflow-y: auto;
+        }
+        .close-modal-btn{
+            position: absolute;
+            top: 0;
+            right: -35px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            &:focus{
+                outline: none;
+            }
+            i{
+                color: white;
+                font-size: 20px;
+            }
+        }
+    }
+}

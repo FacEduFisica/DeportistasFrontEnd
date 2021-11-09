@@ -1,0 +1,68 @@
+@import '../../../variables.scss';
+
+.user-register-container{
+    .form-sgdar{
+        padding: 10px;
+        .disciplines-add_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .input-form{
+                width: 400px;
+                height: 40px;
+                margin-left: 10px;
+            }
+            button{
+                position: absolute;
+                height: 40px;
+                background: white;
+                border: none;
+                right: 0;
+            }
+        }
+        .disciplines-list_container{
+            background: #a1a1a1;
+            display: flex;
+            margin-top: 30px;
+            border-radius: 5px;
+            flex-wrap: wrap;
+            height: auto;
+            max-height: 500px;
+            overflow-y: auto;
+            .discipline-card{
+                display: flex;
+                width: 150px;
+                height: 60px;
+                align-items: center;
+                padding: 5px;
+                justify-content: space-between;
+                margin: 10px;
+                background: white;
+                border-radius: 5px;
+                cursor: pointer;
+                box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
+                p{
+                    margin: 0;
+                    font-family: $fontText;
+                    font-weight: bold;
+                }
+                button{
+                    background: tomato;
+                    display: flex;
+                    justify-content: center;
+                    border: none;
+                    height: 25px;
+                    width: 25px;
+                    border-radius: 5px;
+                    padding-right: 2px;
+                    cursor: pointer;
+                    i{
+                        color: white;
+                        font-size:16px;
+                    }
+                }
+            }
+        }
+    }
+}

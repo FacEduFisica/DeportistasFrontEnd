@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    /* colores instuticionales */
+    --colorGreen : #196844;
+    --colorYellow : #E7C63E;
+    --colorWhite : #FFFFFF;
+    --colorGray : #535353 ;
+
+    /* fonts globales para la aplicacion */
+    --fontTitle : 'Oswald', sans-serif;
+    --fontText : 'Open Sans', sans-serif;
+}
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.input-dropdown{
+    width: 100%;
+    height: 25px;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    font-family: var(--fontText)
+}
+
+.buttons-save-edit{
+    margin: 5px;
+    width: 120px;
+    font-size: 15px;
+    padding: 8px;
+    border: none;
+    color: white;
+    background: var(--colorGreen);
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+
+.button-delete{
+    margin: 5px;
+    width: 120px;
+    font-size: 15px;
+    padding: 8px;
+    border: none;
+    color: white;
+    background: tomato;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+
+.pagination-app{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
