@@ -9,9 +9,9 @@
 
 
 ## Definición
-
+Este proyecto se encarga del control y administración de la escuela de iniciación deportiva del Politécnico Colombiano Jaime Isaza Cadavid, se gestionan los registros de los interesados en pertenecer a los cursos, se realiza seguimiento a cada usuario y se generan informes sobre el mantenimiento de la aplicación.
 
 ## Instalación
 
 
-  ```
+
