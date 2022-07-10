@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Dropdown } from 'semantic-ui-react';
 import './GeneratePermissions.scss';
 import { sweetAlert } from '../../actionsGlobals';
-import { ERROR, SUCCESS, BASE_URL, MESSAGE_PERMISOS_EDICION } from '../../../constantGlobal';
+import {
+    ERROR,
+    SUCCESS,
+    BASE_URL,
+    MESSAGE_PERMISOS_EDICION
+} from '../../../constantGlobal';
 import authService from '../../../services/authService';
 import axios from 'axios';
 const GeneratePermissions = () => {
@@ -23,7 +28,6 @@ const GeneratePermissions = () => {
     ];
     const handleGeneratePermissions = async () => {
         if (!!userPermission) {
-           
             let urlForPermissions = '';
             const token = authService.getToken();
             if (userPermission === 1) {
@@ -36,7 +40,7 @@ const GeneratePermissions = () => {
                     `${BASE_URL}${urlForPermissions}?token=${token}`
                 );
                 if (response.data.codigo === '0000' && !!response.data.estado) {
-                  setUpdateStatus(true);
+                    setUpdateStatus(true);
                     sweetAlert(
                         SUCCESS,
                         '¡Éxito!',
@@ -61,20 +65,22 @@ const GeneratePermissions = () => {
         }
     };
     useEffect(() => {
-      if(updateStatus){
-        getActualPermissionStatus();
-        setUpdateStatus(false);
-      }
-    }, [updateStatus])
+        if (updateStatus) {
+            getActualPermissionStatus();
+            setUpdateStatus(false);
+        }
+    }, [updateStatus]);
 
     const getActualPermissionStatus = async () => {
-      const token = authService.getToken()
-      const response = await axios.get(`${BASE_URL}/admin/users/cambiodedatos/consultar?token=${token}`);
-      if(response.data.codigo === '0000' && !!response.data.estado){
-        const {estado} = response.data.puedeModificar[0];
-        setActualStatus(estado);
-      }
-    }
+        const token = authService.getToken();
+        const response = await axios.get(
+            `${BASE_URL}/admin/users/cambiodedatos/consultar?token=${token}`
+        );
+        if (response.data.codigo === '0000' && !!response.data.estado) {
+            const estado = response.data.puedeModificar[0];
+            setActualStatus(estado);
+        }
+    };
     return (
         <div className='admin-generate-permission'>
             <h1>Generar permisos</h1>
